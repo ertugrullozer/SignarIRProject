@@ -1,7 +1,10 @@
-﻿namespace SignalIR.EntityLayer.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SignalIR.EntityLayer.Entities
 {
     public class About
     {
+      
         public int AboutID { get; set; }
         public string ImageUrl { get; set; }
         public string Title { get; set; }

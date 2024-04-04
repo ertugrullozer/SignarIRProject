@@ -1,7 +1,10 @@
-﻿namespace SignalIR.EntityLayer.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SignalIR.EntityLayer.Entities
 {
     public class Feature
     {
+
         public int FeatureID { get; set; }
         public string Title1 { get; set; }
         public string Description1 { get; set; }

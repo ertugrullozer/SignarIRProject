@@ -10,11 +10,12 @@ namespace SıgnalR.DataAccessLayer.Concrete
 {
     public class SignalRContext:DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    
+      protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=DESKTOP-62HEUCO\\SQLEXPRESS; initial Catolog=SignalRDb;integrated Security=true;TrustServerCertificate=True;");
-
+            optionsBuilder.UseSqlServer("Server=DESKTOP-62HEUCO\\SQLEXPRESS;database=SignalRDb;integrated security=true;TrustServerCertificate=True;");
         }
+    
         public DbSet<About> Abouts { get; set; }
         public DbSet<Booking> Bookings { get; set; }
         public DbSet<Category> Categories { get; set; }
