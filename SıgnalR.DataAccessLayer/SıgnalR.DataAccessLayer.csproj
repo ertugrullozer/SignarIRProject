@@ -25,4 +25,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SignalIR.EntityLayer\SignalIR.EntityLayer.csproj" />
+  </ItemGroup>
+
 </Project>
