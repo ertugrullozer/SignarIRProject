@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalIRWebUI", "SignalIRWe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalIR.EntityLayer", "SignalIR.EntityLayer\SignalIR.EntityLayer.csproj", "{FE94D428-7DEB-4E3B-A452-AFDF8B0BB8AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SıgnalR.DataAccessLayer", "SıgnalR.DataAccessLayer\SıgnalR.DataAccessLayer.csproj", "{747B3E5C-5574-41EE-8C4B-3CEE350B4C01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.DtoLayer", "SignalR.DtoLayer\SignalR.DtoLayer.csproj", "{1114F182-DD14-49B6-8967-2A09994AA890}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.BusinessLayer", "SignalR.BusinessLayer\SignalR.BusinessLayer.csproj", "{19C1BDAA-9570-41D6-BA0D-8E9B82ECFD3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,18 @@ Global
 		{FE94D428-7DEB-4E3B-A452-AFDF8B0BB8AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE94D428-7DEB-4E3B-A452-AFDF8B0BB8AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE94D428-7DEB-4E3B-A452-AFDF8B0BB8AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{747B3E5C-5574-41EE-8C4B-3CEE350B4C01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{747B3E5C-5574-41EE-8C4B-3CEE350B4C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{747B3E5C-5574-41EE-8C4B-3CEE350B4C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{747B3E5C-5574-41EE-8C4B-3CEE350B4C01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1114F182-DD14-49B6-8967-2A09994AA890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1114F182-DD14-49B6-8967-2A09994AA890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1114F182-DD14-49B6-8967-2A09994AA890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1114F182-DD14-49B6-8967-2A09994AA890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19C1BDAA-9570-41D6-BA0D-8E9B82ECFD3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C1BDAA-9570-41D6-BA0D-8E9B82ECFD3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C1BDAA-9570-41D6-BA0D-8E9B82ECFD3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C1BDAA-9570-41D6-BA0D-8E9B82ECFD3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
