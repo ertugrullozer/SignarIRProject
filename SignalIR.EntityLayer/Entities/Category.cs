@@ -1,4 +1,4 @@
-﻿namespace SignalIRApi.DAL.Entities
+﻿namespace SignalIR.EntityLayer.Entities
 {
     public class Category
     {

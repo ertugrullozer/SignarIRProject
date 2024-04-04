@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalIRApi", "SignalIRApi\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalIRWebUI", "SignalIRWebUI\SignalIRWebUI.csproj", "{1192D0D0-3CD0-485E-A6F4-D81E7FCA49B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalIR.EntityLayer", "SignalIR.EntityLayer\SignalIR.EntityLayer.csproj", "{FE94D428-7DEB-4E3B-A452-AFDF8B0BB8AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1192D0D0-3CD0-485E-A6F4-D81E7FCA49B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1192D0D0-3CD0-485E-A6F4-D81E7FCA49B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1192D0D0-3CD0-485E-A6F4-D81E7FCA49B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE94D428-7DEB-4E3B-A452-AFDF8B0BB8AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE94D428-7DEB-4E3B-A452-AFDF8B0BB8AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE94D428-7DEB-4E3B-A452-AFDF8B0BB8AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE94D428-7DEB-4E3B-A452-AFDF8B0BB8AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
