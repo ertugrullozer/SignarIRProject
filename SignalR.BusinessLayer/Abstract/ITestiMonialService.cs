@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SignalR.BusinessLayer.Abstract
 {
-    public interface ITetimonialService:IGenericService<Testimonial>
+    public interface ITestiMonialService:IGenericService<Testimonial>
     {
     }
 }
