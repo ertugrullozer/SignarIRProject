@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SıgnalR.DataAccessLayer.EntityFramework
 {
-    internal class EdContactDal : GenericRepository<Contact>, IContactDal
+    public class EdContactDal : GenericRepository<Contact>, IContactDal
     {
         public EdContactDal(SignalRContext signalRContext) : base(signalRContext)
         {

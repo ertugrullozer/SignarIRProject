@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SıgnalR.DataAccessLayer.EntityFramework
 {
-    internal class EfBookingDal : GenericRepository<Booking>, IBookingDal
+    public class EfBookingDal : GenericRepository<Booking>, IBookingDal
     {
         public EfBookingDal(SignalRContext signalRContext) : base(signalRContext)
         {
