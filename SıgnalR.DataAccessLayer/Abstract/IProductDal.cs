@@ -9,5 +9,8 @@ namespace SıgnalR.DataAccessLayer.Abstract
 {
     public interface IProductDal:IGenericDal<Product>
     {
+        //kategori isimlerle birlikte getirme
+        //->efproductdal
+        List<Product> GetProductWithCategories();
     }
 }

@@ -36,6 +36,13 @@ namespace SignalR.BusinessLayer.Concrete
           return _ProductDal.GetListAll();
         }
 
+        public List<Product> TGetProductWithCategories()
+        {
+            //Kategoriler ile birlikte getir
+            //->DtoLayer -productdto-yeni sınıf
+            return _ProductDal.GetProductWithCategories();
+        }
+
         public void TUpdate(Product entity)
         {
            _ProductDal.Update(entity);

@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SignalIR.EntityLayer.Entities;
 using SignalR.BusinessLayer.Abstract;
 using SignalR.BusinessLayer.Concrete;
+using SıgnalR.DataAccessLayer.Concrete;
 using SignalR.DtoLayer.ProductDto;
 
 namespace SignalIRApi.Controllers
@@ -27,6 +29,26 @@ namespace SignalIRApi.Controllers
             var value = _mapper.Map<List<ResultProductDto>>(_productService.TGetListAll());
             return Ok(value);
         }
+
+        //category isimli mettot listesi
+        [HttpGet("ProductListWithCategory")]
+        public IActionResult ProductListWithCategory() 
+        {
+            var context = new SignalRContext();
+            var value = context.Products.Include(x => x.Category).Select(y => new ResultProductWithCategory
+            {
+                ProductID = y.ProductID,
+                CategoryName = y.ProductName,
+                Description = y.Description,
+                ImageUrl = y.ImageUrl,
+                ProductName = y.ProductName,
+                Price = y.Price,
+                ProductStatus = y.ProductStatus
+            }).ToList();
+            return Ok(value);
+        
+        }
+
         [HttpPost]
         public IActionResult CreateProduct(CreateProductDto createProductDto)
         {
