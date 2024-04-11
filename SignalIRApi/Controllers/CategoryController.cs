@@ -13,14 +13,14 @@ namespace SignalIRApi.Controllers
     {
         private readonly ICategoryService _categoryService;
         private readonly IMapper _mapper;
-        public CategoryController(ICategoryService categoryService,IMapper mapper)
+        public CategoryController(ICategoryService categoryService, IMapper mapper)
         {
             _categoryService = categoryService;
             _mapper = mapper;
         }
 
         [HttpGet]
-        public IActionResult CategoryList() 
+        public IActionResult CategoryList()
         {
             var value = _mapper.Map<List<ResultCategoryDto>>(_categoryService.TGetListAll());
             return Ok(value);
@@ -31,18 +31,18 @@ namespace SignalIRApi.Controllers
             _categoryService.TAdd(new Category()
             {
                 CategoryName = crealteCategoryDto.CategoryName,
-                Status=true
+                Status = true
             });
             return Ok("Category Eklendi");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]//dışarıdan bir Id almalı
         public IActionResult DeleteCategory(int id) 
         {
             var value=_categoryService.TGetById(id);
             _categoryService.TDelete(value);
             return Ok("Category Silindi");
         }
-        [HttpGet("GetCategory")]
+        [HttpGet("{id}")]
         public IActionResult GetCategory(int id) 
         {
         
