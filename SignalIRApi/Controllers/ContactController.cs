@@ -39,20 +39,22 @@ namespace SignalIRApi.Controllers
             });
             return Ok("Contact Eklendi");
         }
-        [HttpPost("GetContact")]
+		[HttpDelete("{id}")]
+		public IActionResult DeleteContact(int id)
+		{
+			var value = _contactService.TGetById(id);
+			_contactService.TDelete(value);
+			return Ok("Contact Silindi");
+
+		}
+
+        [HttpGet("{id}")]
         public IActionResult GetContact(int id)
         {
-            var value= _contactService.TGetById(id);
+            var value = _contactService.TGetById(id);
             return Ok(value);
         }
-        [HttpDelete]
-        public IActionResult DeleteContact(int id) 
-        {
-            var value = _contactService.TGetById(id);
-            _contactService.TDelete(value);
-            return Ok("Contact Silindi");
-        
-        }
+
         [HttpPut]
         public IActionResult UpdateContact(UpdateContactDto update)
         {

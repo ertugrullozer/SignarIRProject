@@ -37,12 +37,11 @@ namespace SignalIRApi.Controllers
             });
             return Ok("Discount Eklendi");
         }
-        [HttpPost("GetDiscount")]
-        public  IActionResult GetDiscount(int id)
+        [HttpGet("{id}")]
+        public IActionResult GetDiscount(int id)
         {
             var value = _discountService.TGetById(id);
             return Ok(value);
-
         }
         [HttpPut]
         public IActionResult UpdateDiscount(UpdateDiscontDto update)
@@ -58,7 +57,7 @@ namespace SignalIRApi.Controllers
             return Ok("Discount Güncellendi");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteDiscount(int id) 
         {
             var value = _discountService.TGetById(id);
